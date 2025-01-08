@@ -2,8 +2,14 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Contacts
+  - Ladders
+  - FallZone
+  - Water
+  - coin
+  - Boundary
   layers:
   - Default
   - TransparentFX
@@ -41,3 +47,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 2000940051
+    locked: 0
+  - name: floor
+    uniqueID: 745496575
+    locked: 0
+  - name: PLayers
+    uniqueID: 4185063449
+    locked: 0
+  - name: platform
+    uniqueID: 2082576215
+    locked: 0
+  m_RenderingLayers:
+  - Default

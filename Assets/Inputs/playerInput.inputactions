@@ -1,0 +1,74 @@
+{
+    "name": "playerInput",
+    "maps": [
+        {
+            "name": "move",
+            "id": "d4948f7d-f514-4e17-99c2-733a3b537d7f",
+            "actions": [
+                {
+                    "name": "MoveLeftRight",
+                    "type": "Value",
+                    "id": "887faa82-ef75-4062-9603-330858ec3063",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "ad7cc0d1-d90e-4fbc-a29d-38fdb803835d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ladders",
+                    "type": "Value",
+                    "id": "b0c70131-ddf3-4f2a-9c9e-6d25941a46d6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5755f1e8-2736-46ee-9ed2-bf27f67ddb57",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveLeftRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0e497fd5-2db4-4099-9946-864b4d97920c",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36c4b3ae-c855-41d1-a087-b0cf0087c607",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ladders",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
