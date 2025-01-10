@@ -25,7 +25,7 @@ public class FallDetector : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
         }
-        //yield return new WaitForSeconds(0.1f);
+        
         _isRespawning = false; 
     }
 }

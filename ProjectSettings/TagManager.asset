@@ -10,6 +10,8 @@ TagManager:
   - Water
   - coin
   - Boundary
+  - Enemy
+  - End
   layers:
   - Default
   - TransparentFX

@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7444604808790439615}
-  - component: {fileID: 7402927916031019001}
   - component: {fileID: 6498313794440711026}
+  - component: {fileID: 7178697093075438488}
+  - component: {fileID: 5655978251012400925}
   m_Layer: 0
   m_Name: coin
   m_TagString: coin
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1062870795476027425}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.88, y: 1.75, z: 0}
+  m_LocalPosition: {x: -0.007, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35,7 +36,21 @@ Transform:
   - {fileID: 1497604493645552701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &7402927916031019001
+--- !u!114 &6498313794440711026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062870795476027425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1773bce1392e44346abb1e4818f22a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pickable: {fileID: 8055509321946729364}
+  _picked: {fileID: 8995058976952261064}
+--- !u!61 &7178697093075438488
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,7 +84,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.31794798, y: 0.19030228}
+  m_Offset: {x: 0.31569028, y: 0.1928485}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -79,22 +94,30 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.7034981, y: 0.7208902}
+  m_Size: {x: 0.67506385, y: 0.68827236}
   m_EdgeRadius: 0
---- !u!114 &6498313794440711026
-MonoBehaviour:
+--- !u!95 &5655978251012400925
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062870795476027425}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1773bce1392e44346abb1e4818f22a6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pickable: {fileID: 8055509321946729364}
-  _picked: {fileID: 8995058976952261064}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f088d2c8f2555d44a8a8f7b9177aa7b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8055509321946729364
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +130,7 @@ GameObject:
   - component: {fileID: 3079925785665339847}
   m_Layer: 0
   m_Name: pickable
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,8 +143,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8055509321946729364}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.32, y: 0.19, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.311, y: 0.179, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -207,7 +230,7 @@ Transform:
   m_GameObject: {fileID: 8995058976952261064}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0.08, z: 0}
+  m_LocalPosition: {x: 0.301, y: 0.165, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
